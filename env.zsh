@@ -5,7 +5,7 @@ if [ -d "$HOME/.bin" ] ; then
 fi
 
 if [ -d "$HOME/go" ]; then
-    export GOPATH=$HOME/go
+    export GOPATH=$HOME/codin/go
     export PATH="$PATH:$GOPATH/bin"
 fi
 

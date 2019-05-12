@@ -19,3 +19,13 @@ alias du='du -h'
 alias df='df -h'
 alias lsblk='lsblk -l -f'
 alias c='clear'
+
+function setproxy {
+    export http_proxy=127.0.0.1:1087
+    export https_proxy=127.0.0.1:1087
+}
+
+function unsetproxy {
+    unset http_proxy
+    unset https_proxy
+}

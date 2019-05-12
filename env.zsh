@@ -4,8 +4,8 @@ if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/go" ]; then
-    export GOPATH=$HOME/codin/go
+if [ -d "$HOME/coding/go" ]; then
+    export GOPATH=$HOME/coding/go
     export PATH="$PATH:$GOPATH/bin"
 fi
 

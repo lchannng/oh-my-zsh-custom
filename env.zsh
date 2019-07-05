@@ -9,6 +9,6 @@ if [ -d "$HOME/coding/go" ]; then
     export PATH="$PATH:$GOPATH/bin"
 fi
 
-if [ -d "$HOME/usr/bin" ]; then
-    export PATH="$PATH:$HOME/usr/bin"
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH="$PATH:$HOME/.local/bin"
 fi

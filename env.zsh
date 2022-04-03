@@ -1,11 +1,11 @@
 # Environment variable
 # set PATH so it includes user's private bin if it exists
-if [ -d $HOME/.bin ] ; then
-    PATH=$HOME/.bin:$PATH
+if [ -d $HOME/.local/bin ]; then
+    export PATH=$HOME/.local/bin:$PATH
 fi
 
-if [ -d $HOME/.local/bin ]; then
-    export PATH=$PATH:$HOME/.local/bin
+if [ -d $HOME/node_modules/.bin ]; then
+    export PATH=$HOME/node_modules/.bin:$PATH
 fi
 
 if [ -n $GOPATH ]; then
@@ -17,7 +17,7 @@ if [ -d $HOME/coding/go ]; then
 fi
 
 if [ -d $GOPATH/bin ]; then
-    export PATH=$PATH:$GOPATH/bin
+    export PATH=$GOPATH/bin:$PATH
 fi
 
 if [ -f $HOME/.private_env.sh ]; then

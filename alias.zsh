@@ -33,3 +33,13 @@ function unsetproxy {
 function mkpasswd() {
     cat /dev/urandom | LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1
 }
+
+function mksshkey() {
+    name=$1
+    re="[[:space:]]+"
+    if [[ $name =~ $re ]]; then
+        echo "key name contains on or more spaces"
+    fi
+    ssh-keygen -t ed25519 -N "" -f ~/.ssh/$name
+}
+

@@ -4,11 +4,6 @@ if [ -d $HOME/.local/bin ]; then
     export PATH=$HOME/.local/bin:$PATH
 fi
 
-NVIM_LS=.config/nvim/language-server/node_modules/.bin
-if [ -d $NVIM_LS ]; then
-    export PATH=$NVIM_LS:$PATH
-fi
-
 if [ -n $GOPATH ]; then
     export GOPATH=$HOME/go
 fi

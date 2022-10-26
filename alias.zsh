@@ -43,3 +43,6 @@ function mksshkey() {
     ssh-keygen -t ed25519 -N "" -f ~/.ssh/$name
 }
 
+function dumpcert() {
+    openssl x509 -text --noout -in $1
+}

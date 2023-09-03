@@ -15,7 +15,3 @@ fi
 if [ -d $GOPATH/bin ]; then
     export PATH=$GOPATH/bin:$PATH
 fi
-
-if [ -f $HOME/.private_env.sh ]; then
-    source $HOME/.private_env.sh
-fi

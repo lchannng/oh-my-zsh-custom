@@ -36,6 +36,8 @@ alias dcstart="$dccmd start"
 alias dck="$dccmd kill"
 unset dccmd
 
+alias gpo="git pull origin"
+
 #others
 alias du='du -h'
 alias df='df -h'

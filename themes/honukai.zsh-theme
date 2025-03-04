@@ -50,7 +50,7 @@ PROMPT="
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
-%{$fg[white]%}[%*]
+%{$fg[white]%}[%D %*]
 %{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
 
 if [[ "$USER" == "root" ]]; then
@@ -63,7 +63,7 @@ PROMPT="
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
-%{$fg[white]%}[%*]
+%{$fg[white]%}[%D %*]
 %{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"
 fi
 
